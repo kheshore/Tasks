@@ -1,24 +1,23 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 @font-face {
     font-family: Outfit;
     src: url('Outfit-VariableFont_wght.ttf');
 }
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: hsl(217, 54%, 11%);
     margin: 0;
     padding: 0;
     font-family: Outfit;
     font-size: 18px;
     color: hsl(0, 0%, 100%);
+}
+flexBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
-#cont{
+parentBox{
     background-color: hsl(216, 50%, 16%);
     display: flex;
     flex-direction: column;
@@ -27,54 +26,54 @@ body{
     margin-bottom: 10px;
     border-radius: 8px;
 }
-#b1{
+topBox{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44vh;
     padding: 20px;
 }
-#image {
+.image {
     width: 100%;
     border-radius: 10px;
 }
 
-#vi{
+.overLay{
     z-index: 10;
     opacity: 0;
     position: absolute;
     padding: 120px;
     border-radius: 10px;
 }
-#vi:hover{
+.overLay:hover{
     opacity: 100;
     cursor: pointer;
     background-color: hsla(178, 100%, 50%,0.3);
 }
-#b2{
+bottomBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
     padding-top: 0px;
 }
-#t1{
+.nftName{
     color: hsl(0, 0%, 100%);
     font-weight: 600;
     margin-top: 0;
 }
-#t1:hover{
+.nftName:hover{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
-#t2{
+.details{
     color: hsl(215, 51%, 70%);
     font-weight: 300;
     width: 44vh;
     margin: 0px;
     padding-bottom: 10px;
 }
-#b3{
+descBox{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +81,7 @@ body{
     padding-top: 10px;
     padding-bottom: 20px;  
 }
-#t3{
+.priceDetails{
     display: flex;
     align-items: center;
     color: hsl(178, 100%, 50%);
@@ -90,7 +89,7 @@ body{
     gap: 5px;
     margin: 0;
 }
-#t4{
+.dateDetails{
     display: flex;
     align-items: center;
     color: hsl(215, 51%, 70%);
@@ -99,23 +98,24 @@ body{
     margin: 0;
 
 }
-#t5{
+.creatorBox{
     display: flex;
     align-items: center;
+    justify-content:center;
     color: hsl(215, 51%, 70%);
     font-weight: 300;
     gap: 5px;
 }
-#image2{
-    width: 30px;
-    border: 1px solid hsl(0, 0%, 100%);
+.image2{
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
     border-radius: 50%;
-    margin-right: 10px;
 }
-#name{
+.name{
     color: hsl(0, 0%, 100%);
 }
-#name:hover{
+.name:hover{
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
