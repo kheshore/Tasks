@@ -1,123 +1,104 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 @font-face {
-    font-family: Outfit;
-    src: url('Outfit-VariableFont_wght.ttf');
+    font-family: Fraunces;
+    src: url('../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
 }
 body{
-    background-color: hsl(217, 54%, 11%);
+    background-color: hsl(30, 38%, 92%);
     margin: 0;
     padding: 0;
-    font-family: Outfit;
-    font-size: 18px;
-    color: hsl(0, 0%, 100%);
+    font-family: Fraunces;
+    font-size: 14px;
 }
 flexBox{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 parentBox{
-    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: center;
+    align-items: center;
+}
+imgBox{
+    display: flex;
+}
+img{
+    border-radius: 10px 0 0 10px;
+    width: 42vh;
+}
+
+rightBox{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    border-radius: 8px;
-}
-topBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44vh;
-    padding: 20px;
-}
-.image {
-    width: 100%;
-    border-radius: 10px;
+    margin: 25px;
+    width: 32vh;    
 }
 
-.overLay{
-    z-index: 10;
-    opacity: 0;
-    position: absolute;
-    padding: 120px;
-    border-radius: 10px;
+.topText{
+    font-family: Montserrat;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
 }
-.overLay:hover{
-    opacity: 100;
-    cursor: pointer;
-    background-color: hsla(178, 100%, 50%,0.3);
+
+.headName{
+    line-height: 24px;
 }
-bottomBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    padding-top: 0px;
-}
-.nftName{
-    color: hsl(0, 0%, 100%);
-    font-weight: 600;
-    margin-top: 0;
-}
-.nftName:hover{
-    color: hsl(178, 100%, 50%);
-    cursor: pointer;
-}
-.details{
-    color: hsl(215, 51%, 70%);
-    font-weight: 300;
-    width: 44vh;
-    margin: 0px;
-    padding-bottom: 10px;
-}
-descBox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid hsl(215, 32%, 27%);
-    padding-top: 10px;
-    padding-bottom: 20px;  
-}
-.priceDetails{
-    display: flex;
-    align-items: center;
-    color: hsl(178, 100%, 50%);
-    font-weight: 600;
-    gap: 5px;
+
+.desc{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
     margin: 0;
+    line-height: 1.6;
 }
-.dateDetails{
-    display: flex;
-    align-items: center;
-    color: hsl(215, 51%, 70%);
-    font-weight: 300;
-    gap: 5px;
-    margin: 0;
 
-}
-.creatorBox{
+priceBox{
     display: flex;
+    margin-bottom: 5px;
     align-items: center;
-    justify-content:center;
-    color: hsl(215, 51%, 70%);
-    font-weight: 300;
+}
+.price{
+    color: hsl(158, 36%, 37%);
+    margin-right: 10px;
+}
+.oldPrice{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 12px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding: 16px;
+    border: none;
     gap: 5px;
 }
-.image2{
-    width: 40px;
-    height: 40px;
-    border: 2px solid hsl(0, 0%, 100%);
-    border-radius: 50%;
-}
-.name{
-    color: hsl(0, 0%, 100%);
-}
-.name:hover{
-    color: hsl(178, 100%, 50%);
+button:hover{
+    background-color: hsl(158, 36%, 20%);
     cursor: pointer;
 }
 
-
+@media screen and (max-width: 685px) {
+    parentBox{
+        flex-direction: column;
+    }
+    img{
+        border-radius: 10px 10px 0 0;
+    }
+}
